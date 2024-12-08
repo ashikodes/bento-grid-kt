@@ -1,0 +1,13 @@
+
+// override bs-body-bg variable
+:root {
+    --bs-body-bg: #F6F5F6;
+}
+
+@import 'bootstrap/dist/css/bootstrap.css';
+@import './fonts.scss';
+
+.app-container {
+    max-width: 70rem;
+    margin: 4rem auto;
+}

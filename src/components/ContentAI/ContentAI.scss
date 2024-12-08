@@ -1,0 +1,100 @@
+.content-ai {
+    display: flex;
+    height: 27.125rem;
+    padding: var(--spacing-300, 1.5rem);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: var(--color-yellow-500, #FFCC6A);
+    gap: 3rem;
+
+    .content-header {
+        color: var(--color-black, #121212);
+        align-self: stretch;
+        /* Desktop/text-preset-2 */
+        font-family: "DM Sans";
+        font-size: var(--font-size-text-preset-2, 2.5rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.25rem; /* 90% */
+    }
+
+    .content-body {
+        display: flex;
+        width: 12.75rem;
+        padding: 1.02113rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.55344rem;
+        border-radius: 1.02rem;
+        background: var(--color-white, #FFF);
+        position: relative;
+    }
+
+    .content-prompt {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .prompt-text {
+        padding: 0.4255rem 1.02113rem;
+        border-radius: 1.27644rem;
+        background: #FFEDED;
+        margin-right: 0.4rem;
+        text-align: right;
+    }
+
+    .prompt-icon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #EBE5FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prompt-text-ai {
+        display: flex;
+        padding: 0.4255rem 1.02113rem;
+        align-items: flex-start;
+        gap: 0.4255rem;
+        flex: 1 0 0;
+        border-radius: 1.27644rem;
+        background: #FCEBD1;
+        overflow: hidden;
+        position: relative;
+        height: 4rem;
+        margin-left: 0.4rem;
+    }
+    
+    .text-ai {
+        width: 100%;
+    }
+
+    .uptrend-content {
+        position: absolute;
+        right: -1rem;
+        top: 4rem;
+        display: flex;
+        width: 5.55931rem;
+        height: 5.55931rem;
+        padding: 1.09656rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.09656rem;
+        flex-shrink: 0;
+
+        border-radius: 3.40381rem;
+        background: var(--color-white, #FFF);
+        box-shadow: -13.615px -16.338px 34.038px 0px rgba(98, 26, 123, 0.05);
+    }
+}

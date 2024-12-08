@@ -1,0 +1,85 @@
+.account-manage {
+    display: flex;
+    height: 15.4375rem;
+    padding: var(--spacing-300, 1.5rem);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0.625rem;
+    background: var(--color-white, #FFF);
+    overflow-x: auto;
+
+    .account-list {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.625rem;
+        position: absolute;
+    }
+
+    .account-instagram, .account-x {
+        display: flex;
+        padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        border-radius: 2.13969rem;
+        background: var(--color-white, #FFF);
+        box-shadow: -9.781px 11.738px 24.454px 0px rgba(98, 26, 123, 0.05);
+    
+        .icon-bg {
+            width: 2.65881rem;
+            height: 2.65881rem;
+            background-color: #FFCC6A;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .account-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .account-name {
+        color: var(--color-black, #121212);
+        font-family: "DM Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 90%; /* 0.9rem */
+        letter-spacing: -0.06rem;
+    }
+
+    .account-numbers {
+        color: #9E9E9E;
+        font-family: "DM Sans";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.0225rem;
+    }
+
+    .card-line {
+        color: var(--color-black, #121212);
+        /* Desktop/text-preset-3 */
+        font-family: "DM Sans";
+        font-size: var(--font-size-text-preset-3, 2rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.75rem; /* 87.5% */
+        letter-spacing: -0.125rem;
+        padding-right: 2rem;
+    }
+
+    .account-list-holder {
+        position: relative;
+        width: 20rem;
+    }
+}

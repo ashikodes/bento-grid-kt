@@ -1,0 +1,85 @@
+.posting-schedule {
+    display: flex;
+    width: 16rem;
+    height: 15.4375rem;
+    padding: var(--spacing-300, 1.5rem) var(--spacing-300, 1.5rem) 0rem var(--spacing-300, 1.5rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200, 1rem);
+    border-radius: 0.625rem;
+    background: var(--color-yellow-500, #FFCC6A);
+    overflow-y: auto;
+
+    .posting-title {
+        color: var(--color-black, #121212);
+        align-self: stretch;
+        /* Desktop/text-preset-3 */
+        font-family: "DM Sans";
+        font-size: var(--font-size-text-preset-3, 2rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.75rem; /* 87.5% */
+        letter-spacing: -0.125rem;
+    }
+
+    .posting-calendar-container {
+        position: relative;
+    }
+
+    .posting-calendar {
+        width: 13rem;
+    }
+
+    .calendar-head {
+        background-color: #7551DC;
+        border-radius: 0.625rem 0.625rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.7rem 1rem;
+    }
+
+    .calendar-head span {
+        color: var(--color-white, #FFF);
+        /* Desktop/text-preset-4 */
+        font-family: "DM Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 111.111% */
+    }
+
+    .calendar-body {
+        background-color: var(--color-white, #FFF);
+        border-radius: 0 0 0.625rem 0.625rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .body-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .body-check {
+        background-color: #7551DC;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .body-entry {
+        background-color: #FCEBD1;
+        border-radius: 6px;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
