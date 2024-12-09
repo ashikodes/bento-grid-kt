@@ -1,6 +1,6 @@
-import { createContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { generateClient } from "aws-amplify/data";
-import type { Account, PostTime, Review, Schema } from "../amplify/data/resource";
+import type { Schema } from "../amplify/data/resource";
 
 
 import './App.scss';
@@ -12,18 +12,12 @@ import ContentPost from './components/ContentPost/ContentPost';
 import ContentSchedule from './components/ContentSchedule/ContentSchedule';
 import FollowerGrowth from './components/FollowerGrowth/FollowerGrowth';
 import PostingSchedule from './components/PostingSchedule/PostingSchedule';
+import { APIData, DataContext } from './context';
 
 const client = generateClient<Schema>();
-interface Data {
-  Review: Review[];
-  PostTime: PostTime[];
-  Account: Account[];
-}
-
-const DataContext = createContext({} as Data);
 
 function App() {
-  const [data, setData] = useState<Data>({} as Data);
+  const [data, setData] = useState<APIData>({} as APIData);
 
   useEffect(() => {
     async function fetchData() {
