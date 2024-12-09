@@ -13,14 +13,18 @@ import ContentSchedule from './components/ContentSchedule/ContentSchedule';
 import FollowerGrowth from './components/FollowerGrowth/FollowerGrowth';
 import PostingSchedule from './components/PostingSchedule/PostingSchedule';
 import { APIData, DataContext } from './context';
-
-const client = generateClient<Schema>();
+import { Amplify } from 'aws-amplify';
 
 function App() {
   const [data, setData] = useState<APIData>({} as APIData);
 
   useEffect(() => {
     async function fetchData() {
+      if (process.env.NODE_ENV === 'development') {
+        const outputs = await import('./amplify_outputs.json');
+        Amplify.configure(outputs.default);
+      }
+      const client = generateClient<Schema>();
       const Review = await client.models.Review.list();
       const PostTime = await client.models.PostTime.list();
       const Account = await client.models.Account.list();
