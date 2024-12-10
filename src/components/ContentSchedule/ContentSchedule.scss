@@ -1,6 +1,5 @@
 .content-schedule {
     display: flex;
-    height: 37.6875rem;
     padding: var(--spacing-400, 2rem);
     flex-direction: column;
     justify-content: center;
@@ -10,6 +9,10 @@
     border-radius: 0.625rem;
     background: var(--color-purple-100, #DBD1FC);
     overflow-x: auto;
+
+    @media screen and (min-width: 62rem) {
+        height: 37.6875rem;
+    }
 
     .title {
         align-self: stretch;
@@ -32,6 +35,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 111.111% */
+
+        @media screen and (min-width: 48rem) {
+            width: 22rem;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 62rem) {
+            width: unset;
+            margin: 0 auto;
+        }
     }
 
     .post-time-container {
@@ -47,8 +60,12 @@
             gap: 0.87881rem;
             border-radius: 1.22613rem;
             background: var(--color-white, #FFF);
-            position: absolute;
-            width: 23rem;
+            width: 20rem;
+            margin: auto;
+
+            @media screen and (min-width: 48rem) {
+                width: 23rem;
+            }
 
             .post-header {
                 color: #091E42;
@@ -70,7 +87,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 1.31819rem;
+                gap: 1rem;
 
                 span {
                     color: #8F8F8F;

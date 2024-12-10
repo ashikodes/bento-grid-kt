@@ -30,35 +30,46 @@ function App() {
   }, []);
   return (
     <DataContext.Provider value={data}>
-      <div className='app-container'>
+      <div className='app-container my-5'>
         <div className='row'>
-          <div className='col-md-3'>
-            <ContentPost />
-            <ContentAI />
+          <div className='col-lg-3 col-md-12 order-last order-lg-first'>
+            <div className="d-lg-block row mt-lg-0 mt-4">
+              <div className="col-md-6 col-lg-12">
+                <ContentPost />
+              </div>
+              <div className="col-md-6 col-lg-12 mt-lg-4 mt-md-0 mt-4">
+                <ContentAI />
+              </div>
+            </div>
           </div>
-          <div className='col-md-9'>
+          <div className='col-lg-9 col-sm-12'>
             <div className='row'>
-              <div className='col-md-8'>
+              <div className='col-sm-12 col-lg-8'>
                 <ContentFast />
-                <div className='row mt-4'>
-                  <div className='col-md-6'>
+                <div className='row'>
+                  <div className='col-12 col-md-6 mt-4'>
                     <AccountManage />
                   </div>
-                  <div className='col-md-6'>
+                  <div className='col-12 col-md-6 mt-4'>
                     <PostingSchedule />
                   </div>
                 </div>
               </div>
-              <div className='col-md-4'>
+              <div className='col-sm-12 col-lg-4 mt-lg-0 mt-4'>
                 <ContentSchedule />
               </div>
             </div>
-            <div className='row mt-4'>
-              <div className='col-md-4'><AudienceGrowth /></div>
-              <div className='col-md-8'><FollowerGrowth /></div>
+            <div className='row'>
+              <div className='col-lg-4 col-sm-12 mt-4 order-last order-lg-first'>
+                <AudienceGrowth />
+              </div>
+              <div className='col-lg-8 col-md-12 mt-4'>
+                <FollowerGrowth />
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </DataContext.Provider>
   );

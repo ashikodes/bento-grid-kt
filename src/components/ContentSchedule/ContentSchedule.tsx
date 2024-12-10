@@ -3,7 +3,7 @@ import './ContentSchedule.scss';
 const ContentSchedule = () => {
     return (
         <div className="content-schedule">
-            <p className='title'>Schedule to social media.</p>
+            <p className='title text-md-center text-lg-start'>Schedule to social media.</p>
             <div className='post-time-container'>
                 <div className='post-time'>
                     <span className='post-header'>Best Time to Post</span>

@@ -6,7 +6,7 @@ import { ReactComponent as Uptrend } from '../../assets/svg/uptrend.svg';
 
 const ContentAI = () => {
     return (
-        <div className="content-ai mt-4">
+        <div className="content-ai">
             <div className="content-header">Write your content using AI.</div>
             <div className='content-body'>
                 <div className='content-prompt'>

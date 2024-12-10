@@ -1,12 +1,23 @@
 .follower-growth {
   display: flex;
-  height: 15.375rem;
   padding: var(--spacing-300, 1.5rem);
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
   border-radius: 0.625rem;
   background: var(--color-purple-500, #7551dc);
+  flex-direction: column;
+  gap: var(--spacing-500, 2.5rem);
+  
+  @media screen and (min-width: 48rem) {
+    flex-direction: row;
+    height: 15.375rem;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 62rem) {
+    justify-content: space-between;
+  }
 
   .growth-chart {
     display: flex;

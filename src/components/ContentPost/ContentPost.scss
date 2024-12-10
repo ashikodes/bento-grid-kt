@@ -1,6 +1,5 @@
 .content-post {
     display: flex;
-    height: 25.9375rem;
     padding: var(--spacing-400, 2rem);
     flex-direction: column;
     justify-content: center;
@@ -9,6 +8,10 @@
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: var(--color-yellow-100, #F9EEE2);
+
+    @media screen and (min-width: 48rem) {    
+        height: 26rem;    
+    }
 }
 
 .content-post p {

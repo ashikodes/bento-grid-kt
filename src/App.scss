@@ -8,6 +8,10 @@
 @import './fonts.scss';
 
 .app-container {
-    max-width: 70rem;
+    max-width: 90%;
     margin: 4rem auto;
+    
+    @media screen and (min-width: 62rem) {
+        max-width: 70rem;
+    }
 }

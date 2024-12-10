@@ -1,6 +1,5 @@
 .content-ai {
     display: flex;
-    height: 27.125rem;
     padding: var(--spacing-300, 1.5rem);
     flex-direction: column;
     justify-content: space-between;
@@ -8,7 +7,15 @@
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: var(--color-yellow-500, #FFCC6A);
-    gap: 3rem;
+    gap: var(--spacing-300, 1.5rem);
+
+    @media screen and (min-width: 48rem) {
+        height: 26rem;
+    }
+    @media screen and (min-width: 62rem) {
+        height: unset;
+        gap: 3rem;
+    }
 
     .content-header {
         color: var(--color-black, #121212);

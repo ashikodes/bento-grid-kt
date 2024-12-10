@@ -37,7 +37,7 @@ const FollowerGrowth = () => {
                     </div>
                 </div>
             </div>
-            <div className='growth-line'>Grow followers with non-stop content.</div>
+            <div className='growth-line text-center text-md-start'>Grow followers with non-stop content.</div>
         </div>
     );
 };

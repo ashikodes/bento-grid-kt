@@ -1,6 +1,5 @@
 .account-manage {
     display: flex;
-    height: 15.4375rem;
     padding: var(--spacing-300, 1.5rem);
     flex-direction: column;
     justify-content: space-between;
@@ -8,12 +7,22 @@
     border-radius: 0.625rem;
     background: var(--color-white, #FFF);
     overflow-x: auto;
+    gap: var(--spacing-200, 1rem);
+    
+    @media screen and (min-width: 48rem) {
+        height: 15.4375rem;
+        padding: var(--spacing-300, 1.5rem);
+    }
 
     .account-list {
         display: flex;
         align-items: flex-start;
         gap: 0.625rem;
-        position: absolute;
+        position: relative;
+
+        @media screen and (min-width: 62rem) {
+            position: absolute;
+        }
     }
 
     .account-instagram, .account-x {
